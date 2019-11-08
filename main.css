@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainframe {
+	height: 100vh;
+	width: 100vw;
+}
+
+.frameleft {
+	background:lightgray;
+	height: 100vh;
+	width: 61.5vw;
+	float:left;
+}
+
+.frameright {
+	background:gray;
+	height: 100vh;
+	width: 38.5vw;
+	float:right;
+
+}
+
+.framecenter {
+	background:gray;
+	height: 90%;
+	width: 80%;
+	margin: 0 auto;
+	
+	
+}
