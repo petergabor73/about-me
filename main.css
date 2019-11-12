@@ -4,24 +4,35 @@
     box-sizing: border-box;
 }
 
+body {
+  background-image: url("images/background-1033746_1280.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:cover;
+}
+
+a {
+	padding:10px;
+}
+
 .mainframe {
 	height: 100vh;
 	width: 100vw;
 }
 
 .frameleft {
-	background:lightgray;
+
 	height: 100vh;
 	width: 61.5vw;
 	float:left;
 }
 
 .frameright {
-	background:gray;
+	
 	height: 100vh;
 	width: 38.5vw;
 	float:right;
-
+	text-align:center;
 }
 
 .framecenter {
@@ -29,6 +40,92 @@
 	height: 90%;
 	width: 80%;
 	margin: 0 auto;
+}
+
+.framepict {
+	background: lightblue;
+	height: 40%;
+	width: 40%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+}
+
+#pege {
+  width: 100%;
+  height: 100%;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 50%;
+  height: 50%;
+  perspective: 1000px;
+  margin:0 auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.text1 {
+	background: lightblue;
+	padding:5%;
+	margin-top: 80px;
+	height: 40%;
+	width: 80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	text-align:center;
+}
+
+.text2 {
+	background: lightblue;
+	position:relative;
+	padding:5%;
+	margin:0 auto 0 auto;
+	height: 80%;
+	width: 60%;
+	display: block;
+	text-align:center;
 	
-	
+}
+
+/* Eltávolítjuk a fekete pontokat a listaelemek elől, és egymás mellé pozicionáljuk őket: */
+ul {
+  list-style-type: none;
+}
+li {
+  display: inline;
 }
