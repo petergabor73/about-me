@@ -1,60 +1,81 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-image: url("images/background-1033746_1280.jpg");
+  background-image: url("images/dark-3061610_1920.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size:cover;
 }
 
+h2 {
+  color: lightgrey;	
+  font-size: 3vw;
+}
+
+h3 {
+  color: lightgrey;	
+  font-size: 1.4vw;
+}
+
 a {
-	padding:10px;
+  padding:10px;
+  font-size: 1vw;
+  color:lightgray;
+}
+
+p {
+  font-size: 1.8vw;
+  line-height: 1.5;
+  font-family: 'Julius Sans One', sans-serif;
+  
 }
 
 .mainframe {
-	height: 100vh;
-	width: 100vw;
+  height: 100vh;
+  width: 100vw;
 }
 
 .frameleft {
-
-	height: 100vh;
-	width: 61.5vw;
-	float:left;
+  display:flex;
+  justify-content: center;
+  align-items: center;  
+  height: 100vh;
+  width: 61.5vw;
+  float:left;
 }
 
 .frameright {
-	
-	height: 100vh;
-	width: 38.5vw;
-	float:right;
-	text-align:center;
+  display:flex;
+  justify-content: center;
+  align-items: center;  
+  height: 100vh;
+  width: 38.5vw;
+  float:right;
+  text-align:center;
 }
 
 .framecenter {
-	background:gray;
-	height: 90%;
-	width: 80%;
-	margin: 0 auto;
+  display:flex;	
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: hsla(0, 0%, 50%, .5);
+  height: 90%;
+  width: 90%;
+
 }
 
 .framepict {
-	background: lightblue;
-	height: 40%;
-	width: 40%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	text-align:center;
-}
-
-#pege {
-  width: 100%;
-  height: 100%;
+  background-color: hsla(0, 0%, 70%, .5);
+  height: 40%;
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
 }
 
 .flip-card {
@@ -91,35 +112,39 @@ a {
   color: black;
 }
 
+#pege {
+  width: 100%;
+  height: auto%;
+  
+}
+
 .flip-card-back {
-  background-color: #2980b9;
+
   color: white;
   transform: rotateY(180deg);
 }
 
-.text1 {
-	background: lightblue;
-	padding:5%;
-	margin-top: 80px;
-	height: 40%;
-	width: 80%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: auto;
-	text-align:center;
+.textleft {
+  background-color: hsla(0, 0%, 100%, .5);
+  padding:2%;
+  height: 40%;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align:center;
 }
 
-.text2 {
-	background: lightblue;
-	position:relative;
-	padding:5%;
-	margin:0 auto 0 auto;
-	height: 80%;
-	width: 60%;
-	display: block;
-	text-align:center;
-	
+.textright {
+  display:flex;
+  justify-content: center;
+  align-items: center;  
+  background-color: hsla(0, 0%, 50%, .5);
+  height: 90%;
+  width: 90%;
+  flex-direction: column;
+  line-height: 1.8;
 }
 
 /* Eltávolítjuk a fekete pontokat a listaelemek elől, és egymás mellé pozicionáljuk őket: */
